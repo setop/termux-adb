@@ -8,10 +8,9 @@ if [ ! -f "$PREFIX/etc/apt/sources.list.d/termux-adb.list" ]; then
   echo -e "deb https://nohajc.github.io termux extras" > $PREFIX/etc/apt/sources.list.d/termux-adb.list
   wget -qP $PREFIX/etc/apt/trusted.gpg.d https://nohajc.github.io/nohajc.gpg
   apt update
-  apt install termux-adb
 else
   echo "Repo already installed"
-  apt install termux-adb
 fi
+apt install termux-adb
 
 echo "done!"
